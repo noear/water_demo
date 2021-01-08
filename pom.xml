@@ -22,5 +22,7 @@
         <module>demo0-common</module>
         <module>demo1-springboot/demo1-app</module>
         <module>demo1-springboot/demo1-rpc-service</module>
+        <module>demo2-solon/demo2-app</module>
+        <module>demo2-solon/demo2-rpc-service</module>
     </modules>
 </project>
