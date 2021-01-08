@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.noear.water</groupId>
-    <artifactId>demo1-client</artifactId>
+    <artifactId>demo1-app</artifactId>
     <version>demo</version>
     <packaging>jar</packaging>
 

@@ -20,7 +20,7 @@
 
     <modules>
         <module>demo0-common</module>
-        <module>demo1-springboot/demo1-client</module>
-        <module>demo1-springboot/demo1-server</module>
+        <module>demo1-springboot/demo1-app</module>
+        <module>demo1-springboot/demo1-rpc-service</module>
     </modules>
 </project>
