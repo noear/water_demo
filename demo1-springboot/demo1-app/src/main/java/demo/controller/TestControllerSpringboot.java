@@ -29,7 +29,7 @@ public class TestControllerSpringboot {
     @Water
     HelloService helloService2;
 
-    @RequestMapping("/test2")
+    @RequestMapping("/test")
     public String home(String msg) throws Exception {
         helloService.hello();
         helloService2.hello();

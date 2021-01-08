@@ -13,7 +13,7 @@ import org.noear.water.annotation.Water;
  * 这是Solon的控制器（基于Solon Bean 容器运行）；可以跳过
  * */
 @Controller
-public class TestControllerSolon {
+public class _TestControllerSolon {
     //这是本地的
     @Inject
     HelloService helloService;
@@ -22,7 +22,7 @@ public class TestControllerSolon {
     @Water
     HelloService helloService2;
 
-    @Mapping("/test")
+    @Mapping("/test2")
     public String home(String msg) throws Exception {
         helloService.hello();
         helloService2.hello();
