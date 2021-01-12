@@ -1,6 +1,5 @@
 package demo.controller;
 
-import org.noear.nami.annotation.NamiClient;
 import org.noear.solon.Utils;
 import org.noear.solon.annotation.Controller;
 import org.noear.solon.annotation.Inject;

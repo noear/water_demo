@@ -1,9 +1,7 @@
 package demo.controller;
 
 import demo.protocol.HelloService;
-import org.noear.nami.annotation.NamiClient;
 import org.noear.solon.Utils;
-import org.noear.solon.annotation.Inject;
 import org.noear.water.WaterClient;
 import org.noear.water.annotation.Water;
 import org.springframework.web.bind.annotation.RequestMapping;
