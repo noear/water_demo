@@ -5,8 +5,12 @@
         db="db_water">
 
 
-    <sql id="getConfig" caching="cache" cacheTag="config_${tag}_${key}" usingCache="60" return="ConfigModel">
+    <sql id="getConfig" caching="cache" cacheTag="config_${tag}_${key}" usingCache="300" return="ConfigModel">
         select * from water_cfg_properties where tag=@{tag:String} and `key` = @{key:String}
+    </sql>
+
+    <sql id="delConfig" caching="cache" cacheClear="config_${tag}_${key}" declare="tag:String,key:String">
+        delete from water_cfg_properties where tag='11111'
     </sql>
 
 </mapper>

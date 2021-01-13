@@ -16,4 +16,6 @@ import demo.model.*;
 @Namespace("demo.dso.mapper.WaterMapper")
 public interface WaterMapper{
     ConfigModel getConfig(String tag, String key) throws SQLException;
+
+    void delConfig(String tag, String key) throws SQLException;
 }
