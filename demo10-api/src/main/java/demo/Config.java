@@ -15,7 +15,6 @@ import javax.sql.DataSource;
 public class Config {
     @Bean("db_water")
     public DataSource water(@Inject("${water.water}") HikariDataSource ds){
-        Solon.cfg();
         return ds;
     }
 }
