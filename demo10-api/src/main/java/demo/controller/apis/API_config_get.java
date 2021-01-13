@@ -4,9 +4,9 @@ import demo.controller.ApiBase;
 import demo.dso.mapper.WaterMapper;
 import demo.model.ConfigModel;
 import org.noear.solon.annotation.Component;
+import org.noear.solon.annotation.Inject;
 import org.noear.solon.annotation.Mapping;
 import org.noear.solon.extend.validation.annotation.NotNull;
-import org.noear.weed.annotation.Db;
 
 import java.sql.SQLException;
 
@@ -16,7 +16,7 @@ import java.sql.SQLException;
 @Component(tag = "api")
 public class API_config_get extends ApiBase {
 
-    @Db
+    @Inject
     WaterMapper waterMapper;
 
     @NotNull("user_id")

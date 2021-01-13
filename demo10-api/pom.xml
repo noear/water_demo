@@ -27,8 +27,21 @@
 
         <dependency>
             <groupId>org.noear</groupId>
+            <artifactId>weed3-solon-plugin</artifactId>
+            <version>${solon.ver}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.noear</groupId>
             <artifactId>water.client-solon-plugin</artifactId>
             <version>${water.ver}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <!--                <version>8.0.20</version>-->
+            <version>5.1.49</version>
         </dependency>
 
         <dependency>

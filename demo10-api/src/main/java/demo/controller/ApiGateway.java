@@ -1,6 +1,7 @@
 package demo.controller;
 
 import org.noear.snack.ONode;
+import org.noear.solon.Utils;
 import org.noear.solon.annotation.Component;
 import org.noear.solon.annotation.Mapping;
 import org.noear.solon.core.Aop;
@@ -59,7 +60,12 @@ public class ApiGateway extends Gateway {
 
                 if (obj instanceof Throwable) {
                     Throwable err = (Throwable) obj;
-                    obj = Result.failure(err.getMessage());
+                    String msg = err.getMessage();
+                    if (Utils.isEmpty(msg)) {
+                        msg = err.toString();
+                    }
+
+                    obj = Result.failure(msg);
                 }
 
                 if ((obj instanceof Result) == false) {
