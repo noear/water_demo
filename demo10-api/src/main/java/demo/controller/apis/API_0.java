@@ -1,6 +1,6 @@
 package demo.controller.apis;
 
-import demo.dso.ApiCodes;
+import demo.controller.ApiCodes;
 import org.noear.solon.annotation.Component;
 import org.noear.solon.annotation.Mapping;
 

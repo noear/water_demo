@@ -1,5 +1,3 @@
-server.port: 7112
-
 
 water:
   host: "water"
