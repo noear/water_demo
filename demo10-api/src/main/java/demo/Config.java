@@ -29,9 +29,9 @@ public class Config {
      *
      * CacheUtils.CacheWrap 对：Solon:CacheService 和 Weed3:ICacheServiceEx 做了双重适配
      */
-    @Bean("cache")
+    @Bean(value = "cache", typed = true)
     public WaterCacheService cache() {
         //对Weed3:ICacheServiceEx 做包装，以兼容Weed3 与 Solon的双重需求
-        return CacheUtils.wrap(new LocalCache());
+        return CacheUtils.wrap(new LocalCache().nameSet("cache"));
     }
 }
