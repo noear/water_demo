@@ -1,0 +1,9 @@
+server.port: 7112
+
+
+water:
+  host: "water"
+  service:
+    name: "demo10api"
+    secretKey: "0zJt0J88TkIvqYgC"
+    config: "@water/*"

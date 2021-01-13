@@ -24,5 +24,7 @@
         <module>demo01-springboot/demo01-rpc-service</module>
         <module>demo02-solon/demo02-app</module>
         <module>demo02-solon/demo02-rpc-service</module>
+
+        <module>demo10-api</module>
     </modules>
 </project>
