@@ -16,10 +16,12 @@ import org.noear.solon.core.handle.Result;
 public class ApiGateway extends Gateway {
     @Override
     protected void register() {
-        Aop.beanForeach(bw -> {
-            if ("api".equals(bw.tag())) {
-                add(bw);
-            }
+        Aop.beanOnloaded(()->{
+            Aop.beanForeach(bw -> {
+                if ("api".equals(bw.tag())) {
+                    add(bw);
+                }
+            });
         });
     }
 
