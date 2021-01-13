@@ -19,10 +19,10 @@
     </properties>
 
     <modules>
-        <module>demo0-common</module>
-        <module>demo1-springboot/demo1-app</module>
-        <module>demo1-springboot/demo1-rpc-service</module>
-        <module>demo2-solon/demo2-app</module>
-        <module>demo2-solon/demo2-rpc-service</module>
+        <module>demo00-common</module>
+        <module>demo01-springboot/demo01-app</module>
+        <module>demo01-springboot/demo01-rpc-service</module>
+        <module>demo02-solon/demo02-app</module>
+        <module>demo02-solon/demo02-rpc-service</module>
     </modules>
 </project>

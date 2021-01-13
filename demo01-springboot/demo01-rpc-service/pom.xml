@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.noear.water</groupId>
-    <artifactId>demo2-rpc-service</artifactId>
+    <artifactId>demo01-rpc-service</artifactId>
     <version>demo</version>
     <packaging>jar</packaging>
 
@@ -15,13 +15,13 @@
     <dependencies>
         <dependency>
             <groupId>org.noear.water</groupId>
-            <artifactId>demo0-common</artifactId>
+            <artifactId>demo00-common</artifactId>
             <version>demo</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>water.client-solon-plugin</artifactId>
+            <artifactId>water.client-springboot-starter</artifactId>
             <version>2.0.7.1</version>
         </dependency>
 
@@ -32,11 +32,16 @@
         </dependency>
 
         <dependency>
-            <groupId>org.noear</groupId>
-            <artifactId>solon.boot.jlhttp</artifactId>
-            <version>1.2.19</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.3.3.RELEASE</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
-
 
     </dependencies>
 
