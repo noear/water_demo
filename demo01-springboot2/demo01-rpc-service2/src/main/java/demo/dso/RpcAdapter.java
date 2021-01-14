@@ -7,7 +7,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 /**
- * Solon Rpc 适配器（为 Springboot 组件，添加 Rpc 支持）
+ * Solon Rpc 适配器（使用 Springboot 体系，为 Springboot 组件，添加 Solon Rpc 支持）
  *
  * @author noear 2021/1/14 created
  */
