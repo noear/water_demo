@@ -7,10 +7,12 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 /**
+ * Solon Rpc 适配器（为 Springboot 组件，添加 Rpc 支持）
+ *
  * @author noear 2021/1/14 created
  */
 @Component
-public class RpcInitialization implements ApplicationRunner {
+public class RpcAdapter implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         start(Solon.global());
