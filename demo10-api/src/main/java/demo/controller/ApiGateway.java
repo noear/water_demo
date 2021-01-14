@@ -1,5 +1,6 @@
 package demo.controller;
 
+import demo.controller.interceptor.AuthInterceptor;
 import org.noear.solon.annotation.Component;
 import org.noear.solon.annotation.Mapping;
 
@@ -11,6 +12,8 @@ import org.noear.solon.annotation.Mapping;
 public class ApiGateway extends GatewayBase {
     @Override
     protected void register() {
+        before(AuthInterceptor.class);
+
         loadBean(bw -> "api".equals(bw.tag()));
     }
 }
