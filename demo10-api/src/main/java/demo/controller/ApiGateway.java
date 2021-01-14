@@ -12,6 +12,7 @@ import org.noear.solon.annotation.Mapping;
 public class ApiGateway extends GatewayBase {
     @Override
     protected void register() {
+        //为网关添加签权处理
         before(AuthInterceptor.class);
 
         loadBean(bw -> "api".equals(bw.tag()));
