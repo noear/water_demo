@@ -11,6 +11,10 @@ import java.util.Map;
 import java.util.Properties;
 
 /**
+ * <p><code>
+ *     I18nUtils.get("appcode","code1");
+ * </code></p>
+ *
  * @author noear 2021/1/14 created
  */
 
