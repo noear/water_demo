@@ -6,4 +6,4 @@ water:
   service:
     name: "demo1-client"
     secretKey: "0zJt0J88TkIvqYgC"
-    config: "@water_session"
+    config: "@water_session/*"
