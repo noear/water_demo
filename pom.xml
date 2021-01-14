@@ -26,6 +26,5 @@
         <module>demo02-solon/demo02-rpc-service</module>
 
         <module>demo10-api</module>
-        <module>demo11-test</module>
     </modules>
 </project>
