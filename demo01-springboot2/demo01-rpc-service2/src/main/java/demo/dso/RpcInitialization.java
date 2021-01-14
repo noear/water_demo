@@ -1,6 +1,5 @@
 package demo.dso;
 
-import demo.dso.HelloServiceRemoteImp;
 import org.noear.solon.Solon;
 import org.noear.solon.SolonApp;
 import org.springframework.boot.ApplicationArguments;
