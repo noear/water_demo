@@ -2,7 +2,7 @@ package demo.controller;
 
 import demo.protocol.HelloService;
 import org.noear.nami.annotation.NamiClient;
-import org.noear.solon.extend.cloud.annotation.CloudConfig;
+import org.noear.solon.cloud.annotation.CloudConfig;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

@@ -1,8 +1,8 @@
 package demo.controller;
 
-import org.noear.solon.extend.cloud.CloudConfigHandler;
-import org.noear.solon.extend.cloud.annotation.CloudConfig;
-import org.noear.solon.extend.cloud.model.Config;
+import org.noear.solon.cloud.CloudConfigHandler;
+import org.noear.solon.cloud.annotation.CloudConfig;
+import org.noear.solon.cloud.model.Config;
 
 /**
  * 配置订阅（获取配置的时实刷新）
