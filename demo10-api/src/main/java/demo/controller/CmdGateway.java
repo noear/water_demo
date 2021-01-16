@@ -9,14 +9,26 @@ import org.noear.solon.core.handle.Handler;
 /**
  * @author noear 2021/1/13 created
  */
-@Mapping("/api/v1/**")
+@Mapping("/cmd/v1/")
 @Component
-public class ApiGateway extends GatewayBase {
+public class CmdGateway extends GatewayBase {
     @Override
     protected void register() {
-        //为网关添加签权处理
-        before(AuthInterceptor.class);
-
         addBeans(bw -> "api".equals(bw.tag()));
+    }
+
+    @Override
+    protected boolean allowPathMerging() {
+        return false;
+    }
+
+    @Override
+    protected String getPathDo(Context c) {
+        String tmp = c.param("method");
+        if (tmp == null) {
+            return null;
+        } else {
+            return tmp.toUpperCase();
+        }
     }
 }
