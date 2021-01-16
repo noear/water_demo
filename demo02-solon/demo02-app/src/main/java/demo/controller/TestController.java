@@ -21,7 +21,7 @@ public class TestController {
     @Inject
     HelloService helloService;
 
-    //这是远程的
+    //这是远程的（改成：CloudClient，会不会显得跟 CloudConfig 更配套?）
     @NamiClient
     HelloService helloService2;
 
