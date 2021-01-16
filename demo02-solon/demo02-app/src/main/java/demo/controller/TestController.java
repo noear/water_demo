@@ -5,7 +5,7 @@ import org.noear.nami.annotation.NamiClient;
 import org.noear.solon.annotation.Controller;
 import org.noear.solon.annotation.Inject;
 import org.noear.solon.annotation.Mapping;
-import org.noear.solon.extend.cloud.annotation.CloudConfig;
+import org.noear.solon.cloud.annotation.CloudConfig;
 
 /**
  * 这是Solon的控制器（基于Solon Bean 容器运行）；可以跳过
