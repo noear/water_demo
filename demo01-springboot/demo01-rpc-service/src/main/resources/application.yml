@@ -1,8 +1,9 @@
 server.port: 7112
 
 
-water:
-  host: "water"
-  service:
-    name: "helloapi"
-    secretKey: "0zJt0J88TkIvqYgC"
+solon.cloud:
+  discovery:
+    type: nacos #这个只是看看
+    server: 172.168.0.48:8848
+    username: nacos
+    password: nacos

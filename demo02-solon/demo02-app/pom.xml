@@ -12,6 +12,10 @@
     <name>${project.artifactId}</name>
     <description>Java project for water</description>
 
+    <properties>
+        <solon.ver>1.2.21</solon.ver>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.noear.water</groupId>
@@ -22,31 +26,31 @@
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>nacos-solon-plugin</artifactId>
-            <version>1.2.21</version>
+            <version>${solon.ver}</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>nami.channel.http.okhttp</artifactId>
-            <version>1.2.21</version>
+            <version>${solon.ver}</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>nami.coder.fastjson</artifactId>
-            <version>1.2.21</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.noear</groupId>
-            <artifactId>solon.boot.jlhttp</artifactId>
-            <version>1.2.21</version>
+            <version>${solon.ver}</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>solon.extend.properties.yaml</artifactId>
-            <version>1.2.21</version>
+            <version>${solon.ver}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>solon.boot.jlhttp</artifactId>
+            <version>${solon.ver}</version>
         </dependency>
 
     </dependencies>

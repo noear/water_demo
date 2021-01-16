@@ -2,10 +2,12 @@ solon.app.name: helloapp
 
 solon.cloud:
   discovery:
+    type: nacos #这个只是看看
     server: 172.168.0.48:8848
     username: nacos
     password: nacos
   config:
+    type: nacos #这个只是看看
     server: 172.168.0.48:8848
     username: nacos
     password: nacos
