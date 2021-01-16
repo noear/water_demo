@@ -12,6 +12,10 @@
     <name>${project.artifactId}</name>
     <description>Java project for water</description>
 
+    <properties>
+        <solon.ver>1.2.21</solon.ver>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.noear.water</groupId>
@@ -21,14 +25,26 @@
 
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>water.client-springboot-starter</artifactId>
-            <version>2.0.8</version>
+            <artifactId>springboot-solon-plugin</artifactId>
+            <version>${solon.ver}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>nacos-solon-plugin</artifactId>
+            <version>${solon.ver}</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>solon.serialization.fastjson</artifactId>
-            <version>1.2.21</version>
+            <version>${solon.ver}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>solon.extend.properties.yaml</artifactId>
+            <version>${solon.ver}</version>
         </dependency>
 
         <dependency>

@@ -1,13 +1,13 @@
 package demo;
 
-import org.noear.water.integration.springboot.EnableWaterClients;
+import org.noear.solon.extend.cloud.integration.springboot.EnableCloudClients;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author noear 2021/1/8 created
  */
-@EnableWaterClients
+@EnableCloudClients
 @SpringBootApplication
 public class ServarApp {
     public static void main(String[] args) {
