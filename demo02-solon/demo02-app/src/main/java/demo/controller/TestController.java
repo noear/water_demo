@@ -1,12 +1,11 @@
 package demo.controller;
 
 import demo.protocol.HelloService;
-import org.noear.solon.Utils;
+import org.noear.nami.annotation.NamiClient;
 import org.noear.solon.annotation.Controller;
 import org.noear.solon.annotation.Inject;
 import org.noear.solon.annotation.Mapping;
-import org.noear.water.WaterClient;
-import org.noear.water.annotation.Water;
+import org.noear.solon.extend.cloud.annotation.CloudConfig;
 
 /**
  * 这是Solon的控制器（基于Solon Bean 容器运行）；可以跳过
@@ -15,7 +14,7 @@ import org.noear.water.annotation.Water;
  */
 @Controller
 public class TestController {
-    @Water("water/water_cache_header")
+    @CloudConfig("water/water_cache_header")
     String water_cache_header;
 
     //这是本地的
@@ -23,19 +22,21 @@ public class TestController {
     HelloService helloService;
 
     //这是远程的
-    @Water
+    @NamiClient
     HelloService helloService2;
 
     @Mapping("/test")
     public String home(String msg) throws Exception {
         helloService.hello();
-        helloService2.hello();
+        String temp = helloService2.hello();
 
-        if (Utils.isNotEmpty(msg)) {
-            WaterClient.Message.sendMessage("test.hello", "test2-" + msg);
-            return "OK: *" + WaterClient.waterTraceId() + "-" + water_cache_header;
-        } else {
-            return "NO: " + helloService2.hello();
-        }
+        return temp;
+
+//        if (Utils.isNotEmpty(msg)) {
+//            WaterClient.Message.sendMessage("test.hello", "test2-" + msg);
+//            return "OK: *" + WaterClient.waterTraceId() + "-" + water_cache_header;
+//        } else {
+//            return "NO: " + helloService2.hello();
+//        }
     }
 }
