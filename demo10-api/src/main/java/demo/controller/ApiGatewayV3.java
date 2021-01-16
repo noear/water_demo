@@ -5,6 +5,7 @@ import org.noear.solon.Utils;
 import org.noear.solon.annotation.Component;
 import org.noear.solon.annotation.Mapping;
 import org.noear.solon.core.handle.Context;
+import org.noear.solon.core.handle.Handler;
 
 /**
  * @author noear 2021/1/13 created
@@ -43,7 +44,7 @@ public class ApiGatewayV3 extends GatewayBase {
     }
 
     @Override
-    protected String getPathDo(Context c) {
-        return c.param("method").toUpperCase();
+    protected Handler find(Context c) throws Throwable {
+        return findDo(c, c.param("method").toUpperCase());
     }
 }
