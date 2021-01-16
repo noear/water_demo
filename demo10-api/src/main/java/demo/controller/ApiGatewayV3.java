@@ -8,6 +8,8 @@ import org.noear.solon.core.handle.Context;
 import org.noear.solon.core.handle.Handler;
 
 /**
+ * 数据包需要预处理，才能获取接口包
+ *
  * @author noear 2021/1/13 created
  */
 @Mapping("/api/v3/")
