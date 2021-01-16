@@ -9,7 +9,7 @@ import org.noear.solon.cloud.model.Config;
  *
  * @author noear 2021/1/6 created
  */
-@CloudConfig("water/water_cache_header")
+@CloudConfig(key = "water_cache_header", group = "water")
 public class TestConfigHandler implements CloudConfigHandler {
 
     @Override

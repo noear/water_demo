@@ -21,16 +21,15 @@
     <modules>
         <module>demo00-common</module>
 
-<!--        <module>demo01-springboot/demo01-app</module>-->
-<!--        <module>demo01-springboot/demo01-rpc-service</module>-->
+        <module>demo01-springboot/demo01-app</module>
+        <module>demo01-springboot/demo01-rpc-service</module>
 
-<!--        <module>demo01-springboot2/demo01-app2</module>-->
-<!--        <module>demo01-springboot2/demo01-rpc-service2</module>-->
+        <module>demo01-springboot2/demo01-app2</module>
+        <module>demo01-springboot2/demo01-rpc-service2</module>
 
         <module>demo02-solon/demo02-app</module>
         <module>demo02-solon/demo02-rpc-service</module>
 
-
-<!--        <module>demo10-api</module>-->
+        <module>demo10-api</module>
     </modules>
 </project>
