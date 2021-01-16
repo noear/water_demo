@@ -42,12 +42,12 @@ public class ApiGatewayV3 extends GatewayBase {
     }
 
     @Override
-    protected boolean allowPathMerging() {
-        return false;
+    protected Handler find(Context c) throws Throwable {
+        return findDo(c, c.param("method").toUpperCase());
     }
 
     @Override
-    protected Handler find(Context c) throws Throwable {
-        return findDo(c, c.param("method").toUpperCase());
+    protected boolean allowPathMerging() {
+        return false;
     }
 }
