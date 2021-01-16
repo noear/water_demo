@@ -27,10 +27,13 @@ public class ApiGatewayV3 extends GatewayBase {
         if (Utils.isEmpty(json)) {
             throw ApiCodes.CODE_14;
         } else {
-            ONode tmp = ONode.load(json);
-            tmp.forEach((k, v) -> {
-                c.paramMap().put(k, v.getString());
-            });
+            ONode body = ONode.load(json);
+
+            if(body.isObject()) {
+                body.forEach((k, v) -> {
+                    c.paramMap().put(k, v.getString());
+                });
+            }
 
             if (Utils.isEmpty(c.param("method"))) {
                 throw ApiCodes.CODE_14;
