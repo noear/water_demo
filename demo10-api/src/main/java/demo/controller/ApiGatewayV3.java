@@ -32,7 +32,7 @@ public class ApiGatewayV3 extends GatewayBase {
                 c.paramMap().put(k, v.getString());
             });
 
-            if (c.param("method") == null) {
+            if (Utils.isEmpty(c.param("method"))) {
                 throw ApiCodes.CODE_14;
             }
         }
