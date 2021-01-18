@@ -18,6 +18,19 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.3.3.RELEASE</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+
+        <dependency>
             <groupId>org.noear.water</groupId>
             <artifactId>demo00-common</artifactId>
             <version>demo</version>
@@ -25,7 +38,7 @@
 
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>springboot-solon-plugin</artifactId>
+            <artifactId>solon-springboot-starter</artifactId>
             <version>${solon.ver}</version>
         </dependency>
 
@@ -47,17 +60,6 @@
             <version>${solon.ver}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.3.3.RELEASE</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-logging</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
 
     </dependencies>
 
