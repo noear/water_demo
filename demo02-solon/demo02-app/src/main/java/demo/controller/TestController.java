@@ -14,7 +14,7 @@ import org.noear.solon.cloud.annotation.CloudConfig;
  */
 @Controller
 public class TestController {
-    @CloudConfig(key = "water_cache_header", group = "water")
+    @CloudConfig("water_cache_header")
     String water_cache_header;
 
     //这是本地的
