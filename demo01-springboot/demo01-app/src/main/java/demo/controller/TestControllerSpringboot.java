@@ -15,7 +15,7 @@ import javax.annotation.Resource;
  */
 @RestController
 public class TestControllerSpringboot {
-    @CloudConfig(key = "water_cache_header", group = "water")
+    @CloudConfig("water_cache_header")
     String water_cache_header;
 
     //这是本地的

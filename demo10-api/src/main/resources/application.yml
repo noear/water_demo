@@ -1,12 +1,6 @@
-
-water:
-  host: "water"
-  service:
-    name: "demo10api"
-    secretKey: "0zJt0J88TkIvqYgC"
-    config: "@water/*"
-
-solon.app.name: demo10api
+solon.app:
+  group: "water"
+  name: "demo10api"
 
 solon.cloud.nacos:
   server: "water"
