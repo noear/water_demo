@@ -5,3 +5,15 @@ water:
     name: "demo10api"
     secretKey: "0zJt0J88TkIvqYgC"
     config: "@water/*"
+
+solon.app.name: demo10api
+
+solon.cloud.nacos:
+  server: "water"
+  config:
+    loadGroup: "water"
+    loadKey: "*"
+  event:
+    seal: "0zJt0J88TkIvqYgC"
+  log:
+    default: "water_api_log"
