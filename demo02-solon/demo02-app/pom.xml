@@ -13,7 +13,7 @@
     <description>Java project for water</description>
 
     <properties>
-        <solon.ver>1.2.21</solon.ver>
+        <solon.ver>1.2.22</solon.ver>
     </properties>
 
     <dependencies>
@@ -25,32 +25,21 @@
 
         <dependency>
             <groupId>org.noear</groupId>
+            <artifactId>solon-rpc</artifactId>
+            <version>${solon.ver}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.noear</groupId>
             <artifactId>nacos-solon-plugin</artifactId>
             <version>${solon.ver}</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>nami.channel.http.okhttp</artifactId>
+            <artifactId>solon-test</artifactId>
             <version>${solon.ver}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.noear</groupId>
-            <artifactId>nami.coder.snack3</artifactId>
-            <version>${solon.ver}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.noear</groupId>
-            <artifactId>solon.extend.properties.yaml</artifactId>
-            <version>${solon.ver}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.noear</groupId>
-            <artifactId>solon.boot.jlhttp</artifactId>
-            <version>${solon.ver}</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
