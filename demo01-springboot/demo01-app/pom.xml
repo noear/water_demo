@@ -12,6 +12,11 @@
     <name>${project.artifactId}</name>
     <description>Java project for water</description>
 
+    <properties>
+        <solon.ver>1.2.22</solon.ver>
+        <water.ver>2.0.10</water.ver>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.noear.water</groupId>
@@ -22,7 +27,7 @@
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>water.client-springboot-starter</artifactId>
-            <version>2.0.10</version>
+            <version>${water.ver}</version>
         </dependency>
 
 
