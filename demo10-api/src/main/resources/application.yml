@@ -2,7 +2,7 @@ solon.app:
   group: "water"
   name: "demo10api"
 
-solon.cloud.nacos:
+solon.cloud.water:
   server: "water"
   config:
     loadGroup: "water"
