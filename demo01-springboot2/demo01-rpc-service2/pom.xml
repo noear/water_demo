@@ -13,8 +13,8 @@
     <description>Java project for water</description>
 
     <properties>
-        <solon.ver>1.2.22</solon.ver>
-        <water.ver>2.0.10</water.ver>
+        <solon.ver>1.2.24</solon.ver>
+        <water.ver>2.0.12</water.ver>
     </properties>
 
     <dependencies>
@@ -26,14 +26,14 @@
 
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>water.client-springboot-starter</artifactId>
-            <version>${water.ver}</version>
+            <artifactId>solon.serialization.fastjson</artifactId>
+            <version>${solon.ver}</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>solon.serialization.fastjson</artifactId>
-            <version>${solon.ver}</version>
+            <artifactId>water.client-springboot-starter</artifactId>
+            <version>${water.ver}</version>
         </dependency>
 
         <dependency>
