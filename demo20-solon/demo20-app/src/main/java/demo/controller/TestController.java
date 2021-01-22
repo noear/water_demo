@@ -7,6 +7,7 @@ import org.noear.solon.annotation.Controller;
 import org.noear.solon.annotation.Inject;
 import org.noear.solon.annotation.Mapping;
 import org.noear.solon.cloud.CloudClient;
+import org.noear.solon.cloud.CloudLogger;
 import org.noear.solon.cloud.annotation.CloudConfig;
 import org.noear.solon.cloud.model.Event;
 import org.noear.water.WaterClient;
@@ -29,10 +30,14 @@ public class TestController {
     @NamiClient
     HelloService helloService2;
 
+    CloudLogger logger = CloudLogger.get(TestController.class);
+
     @Mapping("/test")
     public String home(String msg) throws Exception {
         helloService.hello();
         helloService2.hello();
+
+        logger.info("我是好人：（");
 
         if (Utils.isNotEmpty(msg)) {
             Event event = new Event("test.hello", "cloud-test2-" + msg);

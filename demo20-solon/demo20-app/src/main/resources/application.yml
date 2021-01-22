@@ -10,3 +10,5 @@ solon.cloud.water:
     loadKey: "test.properties"
   event:
     seal: "0zJt0J88TkIvqYgC"
+  log:
+    logger: "water_api_log"
