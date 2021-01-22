@@ -1,10 +1,8 @@
 solon.app:
-  name: "demo21api"
-  group: "demo"
+  name: "waterdemo"
+  group: "water"
 
 solon.cloud.water:
   server: water   #water服务地址
-  config:
-    loadKey: "test.properties"
   event:
     seal: "0zJt0J88TkIvqYgC"

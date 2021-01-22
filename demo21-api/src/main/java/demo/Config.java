@@ -4,6 +4,7 @@ import com.zaxxer.hikari.HikariDataSource;
 import org.noear.solon.annotation.Bean;
 import org.noear.solon.annotation.Configuration;
 import org.noear.solon.annotation.Inject;
+import org.noear.solon.cloud.annotation.CloudConfig;
 import org.noear.water.utils.CacheUtils;
 import org.noear.water.utils.WaterCacheService;
 import org.noear.weed.cache.LocalCache;
@@ -20,7 +21,7 @@ public class Config {
      * ${water.water} 配置是由从配置服务加载的配置
      */
     @Bean("db_water")
-    public DataSource waterDb(@Inject("${water.water}") HikariDataSource ds) {
+    public DataSource waterDb(@CloudConfig("water") HikariDataSource ds) {
         return ds;
     }
 
