@@ -18,9 +18,9 @@ public class TestMessageHandler implements CloudEventHandler {
     public boolean handler(Event event) throws Throwable {
         Datetime dt = Datetime.Now().addSecond(10);
 
-        Event event1 = new Event( "test.hello", event.getContent());
-        event1.setKey(Utils.guid());
-        event1.setScheduled(dt.getFulltime());
+        Event event1 = new Event( "test.hello", event.content())
+                .key(Utils.guid())
+                .scheduled(dt.getFulltime());
 
         CloudClient.event().push(event1);
         return true;
