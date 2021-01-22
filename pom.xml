@@ -32,5 +32,10 @@
 
 
         <module>demo10-api</module>
+
+        <module>demo20-solon/demo20-app</module>
+        <module>demo20-solon/demo20-rpc-service</module>
+
+        <module>demo21-api</module>
     </modules>
 </project>
