@@ -38,6 +38,7 @@ public class TestController {
         helloService2.hello();
 
         logger.info("我是好人：（");
+        logger.info("我不是：{}", "坏人");
 
         if (Utils.isNotEmpty(msg)) {
             Event event = new Event("test.hello", "cloud-test2-" + msg);
