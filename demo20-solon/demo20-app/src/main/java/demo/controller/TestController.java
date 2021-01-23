@@ -1,6 +1,7 @@
 package demo.controller;
 
 import demo.protocol.HelloService;
+import org.noear.mlog.utils.TagMarker;
 import org.noear.nami.annotation.NamiClient;
 import org.noear.solon.Utils;
 import org.noear.solon.annotation.Controller;
@@ -38,7 +39,8 @@ public class TestController {
         helloService2.hello();
 
         logger.info("我是好人：（");
-        logger.info("我不是：{}", "坏人");
+        logger.info("我不是：{} \n\n {}", "坏人",12);
+        logger.info(new TagMarker().tag1("打卡"), "我是谁？");
 
         if (Utils.isNotEmpty(msg)) {
             Event event = new Event("test.hello", "cloud-test2-" + msg);
