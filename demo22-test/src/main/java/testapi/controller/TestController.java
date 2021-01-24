@@ -18,8 +18,8 @@ public class TestController {
         logger.info("有人刷了一下");
 
         if (Utils.isNotEmpty(msg)) {
-            CloudClient.event().push(new Event("test.hello", msg));
-            return "OK: *" + CloudClient.trace().traceId();
+            CloudClient.event().publish(new Event("test.hello", msg));
+            return "OK: *" + CloudClient.trace().getTraceId();
         } else {
             return "NO";
         }

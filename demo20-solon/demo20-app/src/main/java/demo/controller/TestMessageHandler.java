@@ -22,7 +22,7 @@ public class TestMessageHandler implements CloudEventHandler {
                 .key(Utils.guid())
                 .scheduled(dt.getFulltime());
 
-        CloudClient.event().push(event1);
+        CloudClient.event().publish(event1);
         return true;
     }
 }

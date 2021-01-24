@@ -21,7 +21,7 @@ public class TestMessage implements CloudEventHandler {
         event1.key(Utils.guid());
         event1.scheduled(Datetime.Now().addSecond(10).getFulltime());
 
-        CloudClient.event().push(event1);
+        CloudClient.event().publish(event1);
         return true;
     }
 }

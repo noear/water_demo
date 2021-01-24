@@ -48,8 +48,8 @@ public class TestController {
         if (Utils.isNotEmpty(msg)) {
             Event event = new Event("test.hello", "cloud-test2-" + msg);
 
-            CloudClient.event().push(event);
-            return "OK: *" + WaterClient.waterTraceId() + "-" + water_cache_header;
+            CloudClient.event().publish(event);
+            return "OK: *" + CloudClient.trace().getTraceId() + "-" + water_cache_header;
         } else {
             return "NO: " + helloService2.hello();
         }
