@@ -19,7 +19,7 @@ public class TestController {
 
         if (Utils.isNotEmpty(msg)) {
             CloudClient.event().push(new Event("test.hello", msg));
-            return "OK: *" + WaterClient.waterTraceId();
+            return "OK: *" + CloudClient.trace().traceId();
         } else {
             return "NO";
         }
