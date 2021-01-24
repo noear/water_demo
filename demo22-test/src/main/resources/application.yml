@@ -1,4 +1,4 @@
-server.port: 7111
+server.port: 7181
 
 solon.app:
   group: "water"
