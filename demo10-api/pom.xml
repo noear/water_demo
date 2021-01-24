@@ -15,7 +15,7 @@
     <properties>
         <solon.ver>1.2.26</solon.ver>
         <weed3.ver>3.2.30</weed3.ver>
-        <water.ver>2.0.13</water.ver>
+        <water.ver>2.0.14</water.ver>
     </properties>
 
     <dependencies>

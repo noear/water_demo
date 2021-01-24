@@ -6,7 +6,5 @@ solon.app:
 
 solon.cloud.water:
   server: water   #water服务地址
-  event:
-    seal: "0zJt0J88TkIvqYgC"
   log:
     logger: "water_log_admin"
