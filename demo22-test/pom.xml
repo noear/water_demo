@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.noear.water</groupId>
-    <artifactId>demo10-api</artifactId>
+    <artifactId>demo22-test</artifactId>
     <version>demo</version>
     <packaging>jar</packaging>
 
@@ -21,33 +21,14 @@
     <dependencies>
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>solon-api</artifactId>
+            <artifactId>solon-web</artifactId>
             <version>${solon.ver}</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>weed3-solon-plugin</artifactId>
+            <artifactId>water-solon-plugin</artifactId>
             <version>${solon.ver}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.noear</groupId>
-            <artifactId>water.client-solon-plugin</artifactId>
-            <version>${water.ver}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <!--                <version>8.0.20</version>-->
-            <version>5.1.49</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.zaxxer</groupId>
-            <artifactId>HikariCP</artifactId>
-            <version>3.3.1</version>
         </dependency>
 
     </dependencies>
@@ -56,13 +37,6 @@
         <finalName>${project.artifactId}</finalName>
 
         <plugins>
-            <plugin>
-                <groupId>org.noear</groupId>
-                <artifactId>weed3-maven-plugin</artifactId>
-                <version>${weed3.ver}</version>
-            </plugin>
-
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
