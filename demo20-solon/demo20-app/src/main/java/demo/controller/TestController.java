@@ -12,7 +12,6 @@ import org.noear.solon.cloud.CloudLogger;
 import org.noear.solon.cloud.annotation.CloudConfig;
 import org.noear.solon.cloud.model.Event;
 import org.noear.solon.cloud.utils.Tags;
-import org.noear.water.WaterClient;
 
 /**
  * 这是Solon的控制器（基于Solon Bean 容器运行）；可以跳过
