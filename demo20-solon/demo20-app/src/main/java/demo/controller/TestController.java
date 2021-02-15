@@ -1,6 +1,7 @@
 package demo.controller;
 
 import demo.protocol.HelloService;
+import org.noear.mlog.utils.Tags;
 import org.noear.nami.NamiAttachment;
 import org.noear.nami.annotation.NamiClient;
 import org.noear.solon.Utils;
@@ -11,7 +12,6 @@ import org.noear.solon.cloud.CloudClient;
 import org.noear.solon.cloud.CloudLogger;
 import org.noear.solon.cloud.annotation.CloudConfig;
 import org.noear.solon.cloud.model.Event;
-import org.noear.solon.cloud.utils.Tags;
 
 /**
  * 这是Solon的控制器（基于Solon Bean 容器运行）；可以跳过
