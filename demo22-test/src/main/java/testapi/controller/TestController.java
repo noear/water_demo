@@ -1,16 +1,15 @@
 package testapi.controller;
 
+import org.noear.mlog.Logger;
 import org.noear.solon.Utils;
 import org.noear.solon.annotation.Controller;
 import org.noear.solon.annotation.Mapping;
 import org.noear.solon.cloud.CloudClient;
-import org.noear.solon.cloud.CloudLogger;
 import org.noear.solon.cloud.model.Event;
-import org.noear.water.WaterClient;
 
 @Controller
 public class TestController {
-    CloudLogger logger = CloudLogger.get(TestController.class);
+    Logger logger = Logger.get(TestController.class);
 
     @Mapping("/")
     public String home(String msg) throws Exception {
