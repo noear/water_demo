@@ -1,6 +1,7 @@
 package demo.controller;
 
 import demo.protocol.HelloService;
+import org.noear.mlog.Logger;
 import org.noear.mlog.utils.Tags;
 import org.noear.nami.NamiAttachment;
 import org.noear.nami.annotation.NamiClient;
@@ -9,7 +10,6 @@ import org.noear.solon.annotation.Controller;
 import org.noear.solon.annotation.Inject;
 import org.noear.solon.annotation.Mapping;
 import org.noear.solon.cloud.CloudClient;
-import org.noear.solon.cloud.CloudLogger;
 import org.noear.solon.cloud.annotation.CloudConfig;
 import org.noear.solon.cloud.model.Event;
 
@@ -20,6 +20,8 @@ import org.noear.solon.cloud.model.Event;
  */
 @Controller
 public class TestController {
+    static Logger logger = Logger.get(TestController.class);
+
     @CloudConfig("water_cache_header")
     String water_cache_header;
 
@@ -30,8 +32,6 @@ public class TestController {
     //这是远程的
     @NamiClient
     HelloService helloService2;
-
-    CloudLogger logger = CloudLogger.get(TestController.class);
 
     @Mapping("/test")
     public String home(String msg) throws Exception {
