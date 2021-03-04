@@ -21,7 +21,7 @@ public class Config {
      * ${water.water} 配置是由从配置服务加载的配置
      */
     @Bean("db_water")
-    public DataSource waterDb(@CloudConfig("water") HikariDataSource ds) {
+    public DataSource waterDb(@CloudConfig(value = "water", autoRefreshed = true) HikariDataSource ds) {
         return ds;
     }
 
