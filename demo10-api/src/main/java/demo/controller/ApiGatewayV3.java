@@ -20,28 +20,6 @@ public class ApiGatewayV3 extends GatewayBase {
         addBeans(bw -> "api".equals(bw.tag()));
     }
 
-    @Override
-    protected void handlePre(Context c) throws Throwable {
-        String json = c.body();
-        //
-        // 将 body 数据转为 param 数据
-        //
-        if (Utils.isEmpty(json)) {
-            throw ApiCodes.CODE_14;
-        } else {
-            ONode body = ONode.load(json);
-
-            if(body.isObject()) {
-                body.forEach((k, v) -> {
-                    c.paramMap().put(k, v.getString());
-                });
-            }
-
-            if (Utils.isEmpty(c.param("method"))) {
-                throw ApiCodes.CODE_14;
-            }
-        }
-    }
 
     @Override
     protected Handler find(Context c) throws Throwable {

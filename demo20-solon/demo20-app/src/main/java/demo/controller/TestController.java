@@ -1,8 +1,6 @@
 package demo.controller;
 
 import demo.protocol.HelloService;
-import org.noear.mlog.Logger;
-import org.noear.mlog.utils.Tags;
 import org.noear.nami.NamiAttachment;
 import org.noear.nami.annotation.NamiClient;
 import org.noear.solon.Utils;
@@ -12,6 +10,9 @@ import org.noear.solon.annotation.Mapping;
 import org.noear.solon.cloud.CloudClient;
 import org.noear.solon.cloud.annotation.CloudConfig;
 import org.noear.solon.cloud.model.Event;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 
 /**
  * 这是Solon的控制器（基于Solon Bean 容器运行）；可以跳过
@@ -20,7 +21,7 @@ import org.noear.solon.cloud.model.Event;
  */
 @Controller
 public class TestController {
-    static Logger logger = Logger.get(TestController.class);
+    static Logger logger = LoggerFactory.getLogger(TestController.class);
 
     @CloudConfig("water_cache_header")
     String water_cache_header;
@@ -37,12 +38,14 @@ public class TestController {
     public String home(String msg) throws Exception {
         helloService.hello();
 
-        NamiAttachment.current().headerSet("test","12");
+        NamiAttachment.current().headerSet("test", "12");
         helloService2.hello();
 
         logger.info("我是好人：（");
-        logger.info("我不是：{} \n\n {}", "坏人",12);
-        logger.info(Tags.tag2("打卡"), "我是谁？");
+        logger.info("我不是：{} \n\n {}", "坏人", 12);
+
+        MDC.put("tag2", "打卡");
+        logger.info("我是谁？");
 
         if (Utils.isNotEmpty(msg)) {
             Event event = new Event("test.hello", "cloud-test2-" + msg);
