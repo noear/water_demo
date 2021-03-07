@@ -1,17 +1,18 @@
 package testapi.controller;
 
-import org.noear.mlog.Logger;
 import org.noear.solon.Utils;
 import org.noear.solon.cloud.CloudClient;
 import org.noear.solon.cloud.CloudEventHandler;
 import org.noear.solon.cloud.annotation.CloudEvent;
 import org.noear.solon.cloud.model.Event;
 import org.noear.water.utils.Datetime;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @CloudEvent("test.hello")
 public class TestMessage implements CloudEventHandler {
 
-    static Logger logger = Logger.get(TestController.class);
+    static Logger logger = LoggerFactory.getLogger(TestController.class);
 
     @Override
     public boolean handler(Event event) throws Throwable {
