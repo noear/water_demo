@@ -1,7 +1,7 @@
 
-water:
-  host: "water"
-  service:
-    name: "demo1-client"
-    secretKey: "0zJt0J88TkIvqYgC"
-    config: "@water_session"
+solon.app:
+  name: "demo1-client"
+  group: "water"
+
+solon.cloud.water:
+  server: "water"

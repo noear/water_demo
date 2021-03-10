@@ -1,8 +1,9 @@
 server.port: 7112
 
 
-water:
-  host: "water"
-  service:
-    name: "helloapi"
-    secretKey: "0zJt0J88TkIvqYgC"
+solon.app:
+  name: "helloapi"
+  group: "water"
+
+solon.cloud.water:
+  server: "water"
