@@ -5,4 +5,4 @@ solon.app:
 solon.cloud.water:
   server: "121.41.104.216:9371"   #water服务地址
   config:
-    loadKey: "water.file"
+    load: "water.file"

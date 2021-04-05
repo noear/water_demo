@@ -1,14 +1,10 @@
 
 solon.app:
-  name: "demo20-client"
+  name: "demoapp"
   group: "demo"
 
 
 solon.cloud.water:
   server: "121.41.104.216:9371"   #water服务地址
   config:
-    loadKey: "test.properties"
-  event:
-    seal: "0zJt0J88TkIvqYgC"
-  log:
-    logger: "water_log_admin"
+    load: "test.properties"
