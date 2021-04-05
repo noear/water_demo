@@ -6,4 +6,4 @@ solon.app:
   group: "water"
 
 solon.cloud.water:
-  server: "water"
+  server: "121.41.104.216:9371"

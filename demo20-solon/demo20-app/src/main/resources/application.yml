@@ -5,7 +5,7 @@ solon.app:
 
 
 solon.cloud.water:
-  server: water   #water服务地址
+  server: "121.41.104.216:9371"   #water服务地址
   config:
     loadKey: "test.properties"
   event:
