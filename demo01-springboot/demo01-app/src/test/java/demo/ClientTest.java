@@ -16,6 +16,6 @@ public class ClientTest extends HttpTestBase {
     public void test() throws Exception {
         String rst = path("/test").data("msg", "hello").post();
 
-        assert rst != null && rst.contains(":");
+        assert rst != null && rst.startsWith("OK:");
     }
 }

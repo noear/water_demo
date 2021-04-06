@@ -1,6 +1,6 @@
 
 solon.app:
-  name: "demo1-client"
+  name: "demoapp"
   group: "demo"
 
 solon.cloud.water:
