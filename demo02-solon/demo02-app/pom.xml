@@ -26,14 +26,42 @@
 
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>water.client-solon-plugin</artifactId>
-            <version>${water.ver}</version>
+            <artifactId>water-solon-plugin</artifactId>
+            <version>${solon.ver}</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>solon.boot.jlhttp</artifactId>
             <version>${solon.ver}</version>
+        </dependency>
+
+        <!-- rpc client -->
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>nami.channel.http.okhttp</artifactId>
+            <version>${solon.ver}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>nami.coder.snack3</artifactId>
+            <version>${solon.ver}</version>
+        </dependency>
+
+        <!-- rpc client end -->
+
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>solon-test</artifactId>
+            <version>${solon.ver}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
         </dependency>
 
     </dependencies>
