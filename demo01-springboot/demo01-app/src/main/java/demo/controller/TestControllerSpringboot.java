@@ -5,6 +5,8 @@ import org.noear.nami.annotation.NamiClient;
 import org.noear.solon.Utils;
 import org.noear.solon.cloud.annotation.CloudConfig;
 import org.noear.water.WaterClient;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,6 +19,8 @@ import javax.annotation.Resource;
  */
 @RestController
 public class TestControllerSpringboot {
+    static Logger log = LoggerFactory.getLogger(TestControllerSpringboot.class);
+
     @CloudConfig("water_cache_header")
     String water_cache_header;
 
@@ -32,6 +36,10 @@ public class TestControllerSpringboot {
     public String home(String msg) throws Exception {
         helloService.hello();
         helloService2.hello();
+
+        log.info("测试：（");
+        log.warn("测试测试");
+
 
         if (Utils.isNotEmpty(msg)) {
             WaterClient.Message.sendMessage("test.hello", "test2-" + msg);

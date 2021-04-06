@@ -17,7 +17,5 @@ public class ClientTest extends HttpTestBase {
         String rst = path("/test").data("msg", "hello").post();
 
         assert rst != null && rst.startsWith("OK:");
-
-        Thread.sleep(1000);
     }
 }
