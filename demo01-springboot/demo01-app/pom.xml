@@ -36,6 +36,7 @@
             <version>${solon.ver}</version>
         </dependency>
 
+        <!-- rpc client -->
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>nami.channel.http.okhttp</artifactId>
@@ -47,6 +48,8 @@
             <artifactId>nami.coder.snack3</artifactId>
             <version>${solon.ver}</version>
         </dependency>
+
+        <!-- rpc client end -->
 
         <dependency>
             <groupId>org.noear</groupId>
