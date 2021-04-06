@@ -1,7 +1,8 @@
 
-water:
-  host: "water"
-  service:
-    name: "demo10api"
-    secretKey: "0zJt0J88TkIvqYgC"
-    config: "@water/*"
+solon.app:
+  name: "demo1-client"
+  group: "demo"
+
+solon.cloud.water:
+  server: "121.41.104.216:9371"  #真实开发，建议使用域
+
