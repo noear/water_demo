@@ -1,15 +1,13 @@
 package demo;
 
-import org.noear.solon.cloud.integration.springboot.EnableCloud;
-import org.noear.solon.extend.springboot.EnableSolon;
+import org.noear.solon.cloud.integration.springboot.EnableSolonCloud;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author noear 2021/1/8 created
  */
-@EnableCloud
-@EnableSolon
+@EnableSolonCloud
 @SpringBootApplication
 public class ServarApp {
     public static void main(String[] args) {
