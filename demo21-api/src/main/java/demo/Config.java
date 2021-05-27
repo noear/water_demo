@@ -3,11 +3,10 @@ package demo;
 import com.zaxxer.hikari.HikariDataSource;
 import org.noear.solon.annotation.Bean;
 import org.noear.solon.annotation.Configuration;
-import org.noear.solon.annotation.Inject;
 import org.noear.solon.cloud.annotation.CloudConfig;
-import org.noear.water.utils.CacheWrap;
-import org.noear.water.utils.WaterCacheService;
+import org.noear.solon.core.cache.CacheService;
 import org.noear.weed.cache.LocalCache;
+import org.noear.weed.solon.plugin.CacheWrap;
 
 import javax.sql.DataSource;
 
@@ -31,7 +30,7 @@ public class Config {
      * CacheUtils.CacheWrap 对：Solon:CacheService 和 Weed3:ICacheServiceEx 做了双重适配
      */
     @Bean(value = "cache", typed = true)
-    public WaterCacheService cache() {
+    public CacheService cache() {
         //对Weed3:ICacheServiceEx 做包装，以兼容Weed3 与 Solon的双重需求
         return CacheWrap.wrap(new LocalCache().nameSet("cache"));
     }
