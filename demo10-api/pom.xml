@@ -13,9 +13,9 @@
     <description>Java project for water</description>
 
     <properties>
-        <solon.ver>1.4.7</solon.ver>
-        <weed3.ver>3.3.12</weed3.ver>
-        <water.ver>2.1.4</water.ver>
+        <solon.ver>1.4.9</solon.ver>
+        <weed3.ver>3.3.14</weed3.ver>
+        <water.ver>2.1.5</water.ver>
     </properties>
 
     <dependencies>
