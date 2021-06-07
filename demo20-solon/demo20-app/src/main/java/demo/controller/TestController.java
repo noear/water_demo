@@ -38,7 +38,7 @@ public class TestController {
     public String home(String msg) throws Exception {
         helloService.hello();
 
-        NamiAttachment.current().headerSet("test", "12");
+        NamiAttachment.put("test", "12");
         helloService2.hello();
 
         logger.info("我是好人：（");

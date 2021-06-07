@@ -13,8 +13,8 @@
     <description>Java project for water</description>
 
     <properties>
-        <solon.ver>1.4.9</solon.ver>
-        <water.ver>2.1.5</water.ver>
+        <solon.ver>1.4.12</solon.ver>
+        <water.ver>2.1.6</water.ver>
     </properties>
 
     <dependencies>
