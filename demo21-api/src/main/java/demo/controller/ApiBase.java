@@ -1,6 +1,6 @@
 package demo.controller;
 
-import org.noear.solon.extend.validation.annotation.Valid;
+import org.noear.solon.validation.annotation.Valid;
 
 /**
  * 假设协议返回结构为：{code:1, msg:"", data:{}}，则：
